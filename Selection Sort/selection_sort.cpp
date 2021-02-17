@@ -8,13 +8,13 @@ void selection_sort(int array[],int size){
 
 	for (int i = 0; i <= size-2; i++){
 		
-			int min_right = INT_MAX;
+			int min_right = i;
 
 			for (int j = i+1; j <= size-1 ; j++){
 				
-				if (array[j] < min_right ){
-						min_right = array[j];
-						index = j;
+				if (array[j] < array[min_right] ){
+						
+						min_right  = j;
 					}	
 
 			}
