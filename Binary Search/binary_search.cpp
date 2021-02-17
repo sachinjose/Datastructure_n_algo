@@ -9,7 +9,7 @@ void binary_search(int array[],int n, int key){
 	int mid = (left+right)/2;
 	while(left<=right){
 
-		mid = (left+right)/2;
+		mid = left + (right-left)/2;
 		if(array[mid] == key){
 			cout<<"Found at index: "<<mid<<endl;
 			return;
@@ -23,6 +23,7 @@ void binary_search(int array[],int n, int key){
 	}
 
 	cout<<"Element is not in the list"<<endl;
+	return;
 }
 
 int main(){
