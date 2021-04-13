@@ -4,7 +4,7 @@ using namespace std;
 
 void selection_sort(int array[],int size){
 
-	int min_right, index = 0;
+	int min_right;
 
 	for (int i = 0; i <= size-2; i++){
 		
@@ -19,14 +19,7 @@ void selection_sort(int array[],int size){
 
 			}
 
-			if(array[i] > min_right){
-
-				int temp = array[i];
-				array[i] = array[index];
-				array[index] = temp;		
-
-			}
-
+			swap(array[i],array[min_right]);
 
 	}
 

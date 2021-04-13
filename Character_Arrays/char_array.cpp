@@ -42,41 +42,45 @@ int main(){
 
 	char name[100];
 	char a[100],b[100];
-	cout<<"Enter your name :";
-	cin>>name;
-	cout<<"Your first name is "<<name<<endl;
-	cout<<"Your name is "<<leng(name)<<" letters long"<<endl;
+	// cout<<"Enter your name :";
+	// cin>>name;
+	// cout<<"Your first name is "<<name<<endl;
+	// cout<<"Your name is "<<leng(name)<<" letters long"<<endl;
 
-	cout<<"Enter the full name :"<<endl;
-	cin.getline(name,100);
-	cout<<"Your full name is: "<<name<<endl;\
+	// cout<<"Enter the full name :"<<endl;
+	// cin.getline(name,100);
+	// cout<<"Your full name is: "<<name<<endl;\
 
-	reverse(name);
-	cout<<"Your name reversed is: "<<name<<endl;
+	// reverse(name);
+	// cout<<"Your name reversed is: "<<name<<endl;
 
-	// //inbuilt functions
-	cout<<"Length of a name: "<<strlen(input)<<endl;
+	// // //inbuilt functions
+	// cout<<"Length of a name: "<<strlen(name)<<endl;
 
-	cout<<"Enter two strings "<<endl;
-	cin>>a;
-	if(strcmp(a,b) == 0){
-	 	cout<<"Both strings are equal"<<endl;
-	 }
-	 else{
-	 	cout<<"The strings are unequal"<<endl;
-	 }
+	// cout<<"Enter two strings "<<endl;
+	// cin>>a;
+	// if(strcmp(a,b) == 0){
+	//  	cout<<"Both strings are equal"<<endl;
+	//  }
+	//  else{
+	//  	cout<<"The strings are unequal"<<endl;
+	//  }
 
 
-	strcpy(b,a); //strcpy(destn_string,source_string);
-	cout<<b<<endl;
+	// strcpy(b,a); //strcpy(destn_string,source_string);
+	// cout<<b<<endl;
+
 
 
 	cin>>a>>b;
+
+	cout<<a<<" "<<b;
+	cout<<endl;
 	strncpy(b,a,3);
-	cout<<a<<b;
+	// cout<<a<<b;
 
 
-	strcat(b,a);
+	// strcat(b,a);
 	cout<<a<<" "<<b;
 	return 0;
 }
